@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Bliss - Luxury Retreat</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="Utils/Projects/css/mountain-bliss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+    </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="Images/logo.webp" alt="Mountain Bliss Logo">
+    </div>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="project.html">Project</a>
+      <a href="#contact" id="co">Contact</a>
+    </div>
+    <a href="#contact" id="cot" class="navbar-register">Register</a>
+    <button class="navbar-toggle" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+  
+  <!-- Custom cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  
+  <!-- Progress bar -->
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+
+  <!-- Quick navigation -->
+  <div class="quick-nav">
+    <div class="quick-nav-item active" data-label="Home" data-section="hero"></div>
+    <div class="quick-nav-item" data-label="Experience" data-section="panorama"></div>
+    <div class="quick-nav-item" data-label="Amenities" data-section="features"></div>
+    <div class="quick-nav-item" data-label="Gallery" data-section="gallery"></div>
+    <div class="quick-nav-item" data-label="Contact" data-section="cta"></div>
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="section hero" id="hero">
+    <div class="hero-content">
+      <h1>MOUNTAIN BLISS</h1>
+      <h2>LUXURY RETREAT IN THE HEART OF NATURE</h2>
+    </div>
+    <div class="hero-mountains">
+      <div class="mountain mountain-1"></div>
+      <div class="mountain mountain-2"></div>
+      <div class="mountain mountain-3"></div>
+    </div>
+    <div class="scroll-down">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+  
+  <!-- Panorama Section -->
+  <section class="section panorama" id="panorama">
+    <div class="owl-carousel panorama-container">
+      <div class="pano-slide">
+        <div class="pano-content">
+          <div class="pano-text">
+            <h2>Alpine Sanctuary</h2>
+            <p>Nestled between majestic mountain peaks, Mountain Bliss offers a sanctuary of peace and tranquility. Our luxury retreat combines natural beauty with elegant architecture, creating the perfect escape from everyday life.</p>
+            <p>Each residence is thoughtfully designed to maximize panoramic views while preserving the surrounding ecosystem, bringing you closer to nature without sacrificing comfort.</p>
+          </div>
+          <div class="pano-image">
+            <img src="Images/Mountain Bliss/Mountain.jpg" alt="Mountain View Residence">
+          </div>
+        </div>
+      </div>
+      <div class="pano-slide">
+        <div class="pano-content">
+          <div class="pano-text">
+            <h2>Limitless Luxury</h2>
+            <p>Our infinity pool appears to cascade into the valley below, offering a swimming experience like no other. Premium amenities include a private spa, hiking trails, and gourmet farm-to-table dining.</p>
+            <p>Mountain Bliss redefines luxury with sustainability at its core, providing an experience that nurtures both you and the environment.</p>
+          </div>
+          <div class="pano-image">
+            <img src="Images/Mountain Bliss/Infinity Edge Pool.jpg" alt="Infinity Edge Pool">
+          </div>
+        </div>
+      </div>
+      <div class="pano-slide">
+        <div class="pano-content">
+          <div class="pano-text">
+            <h2>Four-Season Paradise</h2>
+            <p>Experience the magic of Mountain Bliss year-round. From snow-capped peaks in winter to vibrant wildflower meadows in summer, each season brings its own unique charm and activities.</p>
+            <p>Our concierge service ensures that your stay is tailored to your preferences, whether you seek adventure or relaxation.</p>
+          </div>
+          <div class="pano-image">
+            <img src="Images/Mountain Bliss/Seasonal Activities.jpg" alt="Seasonal Activities">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="section features" id="features">
+    <div class="features-heading">
+      <h2>Exclusive Amenities</h2>
+      <p>Every aspect of Mountain Bliss has been meticulously crafted to provide an unforgettable luxury experience</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="Images/Mountain Bliss/Private Spa.jpg" alt="Private Spa">
+        </div>
+        <div class="feature-content">
+          <h3>Rejuvenating Spa</h3>
+          <p>Our world-class spa offers holistic treatments inspired by ancient mountain traditions. Unwind with therapeutic massages, facials, and body treatments using organic, locally-sourced ingredients.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="Images/Mountain Bliss/Gourmet Dining.jpg" alt="Gourmet Dining">
+        </div>
+        <div class="feature-content">
+          <h3>Farm-to-Table Cuisine</h3>
+          <p>Savor exceptional cuisine prepared by award-winning chefs using fresh ingredients from our organic gardens and local producers. Each dish celebrates the flavors of the region.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="Images/Mountain Bliss/Adventure Activities.jpg" alt="Adventure Activities">
+        </div>
+        <div class="feature-content">
+          <h3>Mountain Adventures</h3>
+          <p>From guided hiking and mountain biking in summer to skiing and snowshoeing in winter, our expert guides will help you explore the breathtaking surroundings safely.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="Images/Mountain Bliss/Luxury Suite.jpg" alt="Luxury Suite">
+        </div>
+        <div class="feature-content">
+          <h3>Exclusive Accommodations</h3>
+          <p>Our spacious suites and villas blend contemporary design with rustic elements, featuring floor-to-ceiling windows, custom furniture, premium bedding, and private terraces.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="Images/Mountain Bliss/Yoga Session.jpg" alt="Yoga Session">
+        </div>
+        <div class="feature-content">
+          <h3>Wellness Programs</h3>
+          <p>Restore balance through our comprehensive wellness programs including yoga sessions, meditation classes, fitness training, and nutritional consultations.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-image">
+          <img src="Images/Mountain Bliss/Event Space.jpg" alt="Event Space">
+        </div>
+        <div class="feature-content">
+          <h3>Memorable Events</h3>
+          <p>Our stunning venues provide the perfect backdrop for weddings, corporate retreats, and special celebrations, supported by our dedicated event planning team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Gallery Section -->
+  <section class="section gallery" id="gallery">
+    <div class="gallery-heading">
+      <h2>Experience Mountain Bliss</h2>
+      <p>Discover the beauty and luxury of our mountain sanctuary through these captivating moments</p>
+    </div>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="Images/Mountain Bliss/Luxury Suite.jpg" alt="Luxury Suite">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-item-title">Luxury Mountain Suite</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/Mountain Bliss/Mountain View Residence.jpg" alt="Mountain View">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-item-title">Panoramic Vista</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/Mountain Bliss/Yoga Session.jpg" alt="Morning Yoga">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-item-title">Sunrise Yoga Session</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/Mountain Bliss/Gourmet Dining.jpg" alt="Fine Dining">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-item-title">Gourmet Experience</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/Mountain Bliss/Infinity Edge Pool.jpg" alt="Infinity Pool">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-item-title">Infinity Edge Pool</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/Mountain Bliss/Seasonal Activities.jpg" alt="Winter Wonderland">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-item-title">Winter Escape</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/Mountain Bliss/Private Spa.jpg" alt="Spa Treatment">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-item-title">Signature Spa Treatment</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/Mountain Bliss/Summit Hike.jpg" alt="Summit Hike">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-item-title">Guided Mountain Expedition</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Images/Mountain Bliss/Sunset Terrace.jpg" alt="Sunset Terrace">
+        <div class="gallery-overlay"></div>
+        <div class="gallery-item-title">Private Sunset Terrace</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="section cta" id="cta">
+    <div class="cta-shapes">
+      <div class="cta-shape"></div>
+      <div class="cta-shape"></div>
+      <div class="cta-shape"></div>
+    </div>
+    <div class="cta-content">
+      <h2>Your Mountain Escape Awaits</h2>
+      <p>Limited residences available for this exclusive mountain sanctuary. Contact our concierge team to begin your journey to mountain bliss and reserve your piece of paradise today.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+   
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <h2 class="section-title text-center mb-5" style="text-align: center; padding-bottom: 50px; font-size: 50px; font-weight: bolder;">Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-info pt-5">
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="info-content">
+              <h4>Location</h4>
+              <p>Office No. 7‑8, 1st Floor,</p>
+              <p>Shreeji The Status,</p>
+              <p>Parijat Nagar, Nashik</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="info-content">
+              <h4>Phone</h4>
+              <p>+91 8007 751 751</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="info-content">
+              <h4>Email</h4>
+              <p>enquirysankalplandmark@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="bookingForm">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" placeholder="Your Phone">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="form-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Parallax Elements -->
+    <div class="parallax-bg" style="z-index: -1;"></div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="Utils/Projects/js/mountain-bliss.js"></script>
+</body>
+</html>

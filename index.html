@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landmark Forum - Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader with Logo and Gold Circle -->
+    <div id="preloader">
+        <div class="loader-container">
+            <!-- Replace with your logo -->
+            <img src="Images/logo.png" alt="Logo" class="logo">
+            <div class="gold-circle"></div>
+            <div class="gold-circle"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Images/logo-no-text.png" alt=""><span class="d-none d-xl-inline">SANKALP LANDMARK</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list" id="navbarIcon"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-register" href="#contact" id="co">Register Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Hero Images Slider -->
+        <div class="hero-slider">
+            <div class="hero-image active" style="background-image: url('Images/01.webp');"></div>
+            <div class="hero-image" style="background-image: url('Images/02.webp');"></div>
+            <div class="hero-image" style="background-image: url('Images/03.webp');"></div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <div class="hero-text active">
+                    <h1 class="hero-title">Experience The Sankalp Landmark</h1>
+                    <p class="hero-subtitle">Discover a new perspective on life</p>
+                    <p class="hero-description">The Sankalp Landmark is designed to bring about positive, permanent shifts in the quality of your life.</p>
+                    <a href="#" class="btn btn-explore">Explore More</a>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Transform Your Future</h1>
+                    <p class="hero-subtitle">Create possibilities that inspire you</p>
+                    <p class="hero-description">Participants report that their relationships are dramatically transformed, resolving long-standing issues.</p>
+                    <a href="#" class="btn btn-explore">Learn More</a>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Break Through Limitations</h1>
+                    <p class="hero-subtitle">Redefine what's possible for you</p>
+                    <p class="hero-description">The Sankalp Landmark offers a methodology for producing breakthroughs—achievements that are extraordinary.</p>
+                    <a href="#" class="btn btn-explore">Register Now</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide Indicators -->
+        <div class="slide-indicators">
+            <div class="indicator active" data-index="0"></div>
+            <div class="indicator" data-index="1"></div>
+            <div class="indicator" data-index="2"></div>
+        </div>
+    </section>
+
+    <section class="about-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 position-relative">
+                    <div class="aos-init aos-animate" data-aos="fade-right" data-aos-duration="5000">
+                    <h2 class="section-title">About Sankalp Landmark</h2>
+                    <p class="about-subtitle">A legacy of transformation since 2004</p>
+                    <p class="about-text">Our company was started 20 years back by our founder – Mr. Uttam Appa Shinde in Nashik, Igatpuri. Under his purview, the company sold over 200 acres of land in Nashik which is a milestone in itself. As an organization, Sankalp believes not just in selling our lands and villas, but we also endeavor to welcome new members to our family and give them healthy returns.</p>
+                    <p class="about-text">In the future, we want to give our customers multiple options to choose from depending on their budget. We’ll be offering studio apartments and budget friendly homes in the lap of nature.</p>
+                    <a href="#" class="btn btn-more">Our Philosophy</a>
+                    </div>
+                    <div class="core-values aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="value-item">
+                                    <div class="value-icon">
+                                        <i class="bi bi-lightbulb"></i>
+                                    </div>
+                                    <div class="value-content">
+                                        <h4>Breakthrough Thinking</h4>
+                                        <p>Creating possibilities that weren't available before.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="value-item">
+                                    <div class="value-icon">
+                                        <i class="bi bi-people"></i>
+                                    </div>
+                                    <div class="value-content">
+                                        <h4>Authentic Communication</h4>
+                                        <p>Building relationships based on integrity and trust.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="value-item">
+                                    <div class="value-icon">
+                                        <i class="bi bi-arrow-repeat"></i>
+                                    </div>
+                                    <div class="value-content">
+                                        <h4>Personal Transformation</h4>
+                                        <p>Living a life of personal and professional fulfillment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="value-item">
+                                    <div class="value-icon">
+                                        <i class="bi bi-heart"></i>
+                                    </div>
+                                    <div class="value-content">
+                                        <h4>Empowered Living</h4>
+                                        <p>Taking effective action aligned with your vision.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-image">
+                        <img src="Images/about - 1.webp" alt="About Landmark Forum" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container pt-5">
+        <div class="row">
+          <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="section-title">Our Projects</h2>
+            <p class="interactive-subtitle">Discover our signature developments in Igatpuri</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12">
+            <div class="card-container" data-aos="fade-up" data-aos-duration="1000">
+      
+              <!-- Mountain Bliss -->
+              <div class="card interactive-card" data-index="1">
+                <img src="Images/Project 1.webp" alt="Mountain Bliss" class="card-image">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    <i class="bi bi-geo-alt card-icon"></i>
+                    Mountain Bliss
+                  </h5>
+                  <div class="card-content">
+                    <p>
+                      Nestled along Bhavli Dam Road in Bhagat Wadi, Pimpri Sado, Mountain Bliss 
+                      offers vastu‑compliant resort plots with sweeping Sahyadri mountain views. 
+                      Plot sizes range from 1,000 to 5,000 sq ft, starting at ₹1,200 per sq ft.
+                    </p>
+                    <a href="project.html" class="btn btn-card">Explore More</a>
+                  </div>
+                  <div class="hover-text"><p>Hover to explore</p></div>
+                </div>
+              </div>
+      
+              <!-- Beautiful Bhavali -->
+              <div class="card interactive-card" data-index="2">
+                <img src="Images/Project 3.webp" alt="Beautiful Bhavali" class="card-image">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    <i class="bi bi-water card-icon"></i>
+                    Beautiful Bhavali
+                  </h5>
+                  <div class="card-content">
+                    <p>
+                      Located near Gavhande, Beautiful Bhavali features waterfront plots 
+                      overlooking the dam and valley. Sizes from 1,200 to 4,000 sq ft, 
+                      with prices starting at ₹1,100 per sq ft.
+                    </p>
+                    <a href="project.html" class="btn btn-card">Explore More</a>
+                  </div>
+                  <div class="hover-text"><p>Hover to explore</p></div>
+                </div>
+              </div>
+      
+              <!-- Sunscape -->
+              <div class="card interactive-card" data-index="3">
+                <img src="Images/Project 2.webp" alt="Sunscape" class="card-image">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">
+                    <i class="bi bi-sun card-icon"></i>
+                    Sunscape
+                  </h5>
+                  <div class="card-content">
+                    <p>
+                      Situated on Bhavli Dam Ring Road in Waghyachiwadi, Sunscape offers elevated 
+                      plateau plots with sunrise vistas, 24/7 security, and infrastructure ready. 
+                      Plot sizes 900–3,500 sq ft, starting at ₹1,150 per sq ft.
+                    </p>
+                    <a href="project.html" class="btn btn-card">Explore More</a>
+                  </div>
+                  <div class="hover-text"><p>Hover to explore</p></div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="row justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title">What Participants Say</h2>
+                    <p class="testimonial-subtitle">Real stories of transformation</p>
+                </div>
+            </div>
+            
+            <div class="owl-carousel testimonial-carousel aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+    
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Investing in Mountain Bliss has been the best financial decision I've made. The panoramic Sahyadri views and Sankalp Landmark’s transparent process made everything seamless. Our family weekends there are priceless."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-person">
+                        <div class="testimonial-image">
+                            <img src="Images/pic-2.png" alt="Rohan Deshmukh">
+                        </div>
+                        <div class="testimonial-info">
+                            <h5>Rohan Deshmukh</h5>
+                            <span>IT Professional</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Waking up to the dam views at Beautiful Bhavali is simply magical. Sankalp Landmark delivered on every promise—excellent infrastructure, round‑the‑clock security, and on‑time handover."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-person">
+                        <div class="testimonial-image">
+                            <img src="Images/pic-3.png" alt="Priya Kulkarni">
+                        </div>
+                        <div class="testimonial-info">
+                            <h5>Priya Kulkarni</h5>
+                            <span>Entrepreneur</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "Sunscape’s sunrise vistas and ready‑to‑go infrastructure exceeded my expectations. It’s the ideal peaceful retreat—and the ROI potential is outstanding."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-person">
+                        <div class="testimonial-image">
+                            <img src="Images/pic-2.png" alt="Amit Sharma">
+                        </div>
+                        <div class="testimonial-info">
+                            <h5>Amit Sharma</h5>
+                            <span>Businessman</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "As an architect, I appreciate Sankalp Landmark’s vastu‑compliant layouts and attention to detail. Mountain Bliss is beautifully planned and executed, true to its promise."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-person">
+                        <div class="testimonial-image">
+                            <img src="Images/pic-3.png" alt="Anjali Patil">
+                        </div>
+                        <div class="testimonial-info">
+                            <h5>Anjali Patil</h5>
+                            <span>Architect</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            "The entire purchase at Sankalp Landmark was professional and hassle‑free. Beautiful Bhavali’s community feel and amenities are exceptional—I couldn’t be happier."
+                        </p>
+                        <div class="testimonial-rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-person">
+                        <div class="testimonial-image">
+                            <img src="Images/pic-4.png" alt="Vivek Joshi">
+                        </div>
+                        <div class="testimonial-info">
+                            <h5>Vivek Joshi</h5>
+                            <span>Retired Colonel</span>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-right">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="contact-subtitle">Ready to explore Sankalp Landmark projects?</p>
+                <p class="contact-text">
+                    Have questions about our land parcels or want to visit a site? Our Nashik team is here to help you secure your dream investment.
+                </p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Visit Us</h4>
+                            <p>
+                                Office No. 7‑8, 1st Floor, Shreeji The Status,<br>
+                                Opposite City Center Mall, Forest Colony,<br>
+                                Parijat Nagar, Nashik, Maharashtra 422007
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Call Us</h4>
+                            <p>
+                                +91 8007 751 751<br>
+                                Monday to Saturday, 10am – 7pm
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Email Us</h4>
+                            <p>enquirysankalplandmark@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/SankalpLandmarks/" target="_blank" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.sankalplandmark.com/" target="_blank" class="social-link"><i class="bi bi-globe"></i></a>
+                        <a href="https://www.instagram.com/sankalp_landmark/" target="_blank" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.youtube.com/@SankalpLandmark" target="_blank" class="social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="number" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-submit">Send Message</button>
+                        </div>
+                        <div class="message-sent">
+                            <!-- success message goes here -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <!-- About Us -->
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <div class="footer-widget">
+                    <h4 class="widget-title">About Us</h4>
+                    <p>
+                        Sankalp Landmark is a Nashik‑based real estate developer specializing in premium land parcels, second homes, and eco‑living retreats across the scenic Igatpuri region. Founded in 2004, we combine vastu‑compliant layouts with modern infrastructure to deliver lasting value and serene living experiences.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Projects -->
+            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                <div class="footer-widget">
+                    <h4 class="widget-title">Projects</h4>
+                    <ul class="footer-links">
+                        <li><a href="project-mountain-bliss.html">Mountain Bliss</a></li>
+                        <li><a href="project-beautiful-bhavali.html">Beautiful Bhavali</a></li>
+                        <li><a href="project-sunscape.html">Sunscape</a></li>
+                        <li><a href="project.html">All Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                <div class="footer-widget">
+                    <h4 class="widget-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Projects</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                    <h4 class="widget-title">Newsletter</h4>
+                    <p>Subscribe for the latest project updates and investment insights from Sankalp Landmark.</p>
+                    <form class="footer-subscribe">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="bi bi-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="copyright">
+                        © 2025 Sankalp Landmark. All Rights Reserved.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="footer-bottom-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+
+        $(document).ready(function(){
+            $('.testimonial-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+                margin: 30,
+                nav: true,
+                dots: true,
+                navText: [
+                    '<i class="bi bi-arrow-left"></i>',
+                    '<i class="bi bi-arrow-right"></i>'
+                ],
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    768: {
+                        items: 2,
+                        nav: true
+                    }
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
