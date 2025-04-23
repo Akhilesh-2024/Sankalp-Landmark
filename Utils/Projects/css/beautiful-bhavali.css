@@ -43,6 +43,10 @@ section {
   position: relative;
 }
 
+.nav-link:focus, .nav-link:hover{
+  color: white !important;
+}
+
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
