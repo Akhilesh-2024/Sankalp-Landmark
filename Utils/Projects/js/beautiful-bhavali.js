@@ -487,3 +487,49 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+
+function smoothScroll(target, duration) {
+    let element = document.querySelector(target);
+    let targetPosition = element.getBoundingClientRect().top + window.scrollY - 80; // Adjust by 200px
+    let startPosition = window.scrollY;
+    let startTime = null;
+  
+    function animation(currentTime) {
+      if (startTime === null) startTime = currentTime;
+      let timeElapsed = currentTime - startTime;
+      let run = ease(timeElapsed, startPosition, targetPosition - startPosition, duration);
+      
+      window.scrollTo(0, run);
+      
+      if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+  
+    function ease(t, b, c, d) { 
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    }
+  
+    requestAnimationFrame(animation);
+  }
+  
+  document.querySelector("#ho").addEventListener("click", function () {
+    smoothScroll("#home", 2000);
+  });
+  document.querySelector("#ab").addEventListener("click", function () {
+    smoothScroll("#about", 2000);
+  });
+  document.querySelector("#re").addEventListener("click", function () {
+    smoothScroll("#residences", 2000);
+  });
+  document.querySelector("#am").addEventListener("click", function () {
+    smoothScroll("#amenities", 2000);
+  });
+  document.querySelector("#lo").addEventListener("click", function () {
+    smoothScroll("#location", 2000);
+  });
+  document.querySelector("#co").addEventListener("click", function () {
+    smoothScroll("#contact", 2000);
+  });

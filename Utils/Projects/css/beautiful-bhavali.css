@@ -352,7 +352,7 @@ section {
 .hero-subtitle {
   font-size: 1.2rem;
   margin-bottom: 2.5rem;
-  max-width: 500px;
+  width: 500px;
 }
 
 .hero-cta {
