@@ -43,8 +43,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="project.html">Projects</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="project.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="project-mountain-bliss.html">Mountain Bliss</a></li>
+                        <li><a class="dropdown-item" href="project-beautiful-bhavali.html">Beautiful Bhavali</a></li>
+                        <li><a class="dropdown-item" href="project-sunscape.html">Sunscape</a></li>
+                        <li><a class="dropdown-item" href="project.html">All Projects</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="gallery.html">Gallery</a>
@@ -429,6 +437,60 @@
 </footer>
 
 
+    <!-- Live Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-button" id="chatButton">
+            <i class="bi bi-chat-dots-fill"></i>
+            <span>Chat with us</span>
+        </div>
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <img src="Images/logo-no-text.png" alt="Sankalp Landmark" class="chat-logo">
+                    <div>
+                        <h5>Sankalp Landmark</h5>
+                        <small>We'll respond immediately</small>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatClose">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot">
+                    <div class="message-content">
+                        <p>Hello! Welcome to Sankalp Landmark. How can I help you today?</p>
+                    </div>
+                </div>
+                <div class="chat-message bot">
+                    <div class="message-content">
+                        <p>You can ask me about our projects, locations, or amenities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-suggestions-container">
+                <div class="suggestions-header">
+                    <span>Suggested Questions</span>
+                    <button id="toggleSuggestions" class="toggle-suggestions">
+                        <i class="bi bi-chevron-up"></i>
+                    </button>
+                </div>
+                <div class="chat-suggestions" id="chatSuggestions">
+                    <button class="suggestion-btn">Tell me about Mountain Bliss</button>
+                    <button class="suggestion-btn">What amenities do you offer?</button>
+                    <button class="suggestion-btn">How can I book a site visit?</button>
+                    <button class="suggestion-btn">What are your payment plans?</button>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button id="sendMessage">
+                    <i class="bi bi-send-fill"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
@@ -436,6 +498,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="script.js"></script>
+    <script src="chat.js"></script>
     <script>
         AOS.init();
 

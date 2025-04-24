@@ -906,6 +906,7 @@ body {
   .navbar-toggle {
     display: block;
   }
+  
 }
 
 /* Responsive styles */
@@ -969,6 +970,7 @@ body {
   .quick-nav {
     display: none;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -1188,6 +1190,9 @@ body {
 
   .gallery-item-title {
     font-size: 0.8rem;
+  }
+  .form-control{
+    padding-right: 0 !important;
   }
 }
 

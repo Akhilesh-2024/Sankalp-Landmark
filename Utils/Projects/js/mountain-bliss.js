@@ -507,3 +507,49 @@ $(document).ready(function () {
     navText: ['<span class="owl-prev">‹</span>', '<span class="owl-next">›</span>']
   });
 });
+
+
+function smoothScroll(target, duration) {
+  let element = document.querySelector(target);
+  let targetPosition = element.getBoundingClientRect().top + window.scrollY - 0; // Adjust by 200px
+  let startPosition = window.scrollY;
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    let timeElapsed = currentTime - startTime;
+    let run = ease(timeElapsed, startPosition, targetPosition - startPosition, duration);
+    
+    window.scrollTo(0, run);
+    
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  function ease(t, b, c, d) { 
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
+}
+
+document.querySelector("#he").addEventListener("click", function () {
+  smoothScroll("#hero", 2000);
+});
+document.querySelector("#pa").addEventListener("click", function () {
+  smoothScroll("#panorama", 2000);
+});
+document.querySelector("#ga").addEventListener("click", function () {
+  smoothScroll("#gallery", 2000);
+});
+document.querySelector("#fe").addEventListener("click", function () {
+  smoothScroll("#features", 2000);
+});
+document.querySelector("#co").addEventListener("click", function () {
+  smoothScroll("#contact", 2000);
+});
+document.querySelector("#cot").addEventListener("click", function () {
+  smoothScroll("#contact", 2000);
+});
