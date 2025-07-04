@@ -1,6 +1,6 @@
 # 🏢 Sankalp Landmark – Responsive Multi-Page Website
 
-![Sankalp Landmark Preview](preview.png)
+![Sankalp Landmark Preview](Preview.png)
 
 A modern, responsive website for Sankalp Landmark, a real estate and construction company. Built with performance and user experience in mind.
 
